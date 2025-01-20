@@ -1,0 +1,362 @@
+{
+  "contractName": "Faucet",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "counter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "funds",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"counter\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"funds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"Faucet\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0x55986c127c0630fce333dc43d8e13dd382b1e5c4c9958189d991323737f8de8b\",\"urls\":[\"bzzr://d58ae8449c0702fc0fbc433d5c3c230627ce265dcea0df02aa4eb84f03a2a92b\"]}},\"version\":1}",
+  "bytecode": "0x60806040526103e86000557ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff660015534801561003a57600080fd5b5060d0806100496000396000f3fe6080604052600436106043576000357c01000000000000000000000000000000000000000000000000000000009004806361bc221a146048578063c89f2ce4146070575b600080fd5b348015605357600080fd5b50605a6098565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b506082609e565b6040518082815260200191505060405180910390f35b60015481565b6000548156fea165627a7a7230582072ff776a0e4bd661677b8b3f9d6f8e424b90eed73869613132396b4302f3ef990029",
+  "deployedBytecode": "0x6080604052600436106043576000357c01000000000000000000000000000000000000000000000000000000009004806361bc221a146048578063c89f2ce4146070575b600080fd5b348015605357600080fd5b50605a6098565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b506082609e565b6040518082815260200191505060405180910390f35b60015481565b6000548156fea165627a7a7230582072ff776a0e4bd661677b8b3f9d6f8e424b90eed73869613132396b4302f3ef990029",
+  "sourceMap": "67:132:0:-;;;136:4;116:24;;192:3;171:24;;67:132;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:132:0;;;;;;;",
+  "deployedSourceMap": "67:132:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;171:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;171:24:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;116;;8:9:-1;5:2;;;30:1;27;20:12;5:2;116:24:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;171;;;;:::o;116:::-;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\ncontract Faucet {\r\n    // storage variables\r\n    uint public funds = 1000; // positive values only\r\n    int public counter = -10;\r\n}\r\n",
+  "sourcePath": "C:\\Projects\\next_blockchain\\faucet\\contracts\\FaucetContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/FaucetContract.sol",
+    "exportedSymbols": {
+      "Faucet": [
+        9
+      ]
+    },
+    "id": 10,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "Faucet",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "funds",
+            "nodeType": "VariableDeclaration",
+            "scope": 9,
+            "src": "116:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "116:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31303030",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "136:4:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000_by_1",
+                "typeString": "int_const 1000"
+              },
+              "value": "1000"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "counter",
+            "nodeType": "VariableDeclaration",
+            "scope": 9,
+            "src": "171:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "int",
+              "nodeType": "ElementaryTypeName",
+              "src": "171:3:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "id": 7,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "nodeType": "UnaryOperation",
+              "operator": "-",
+              "prefix": true,
+              "src": "192:3:0",
+              "subExpression": {
+                "argumentTypes": null,
+                "hexValue": "3130",
+                "id": 6,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "193:2:0",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_10_by_1",
+                  "typeString": "int_const 10"
+                },
+                "value": "10"
+              },
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_minus_10_by_1",
+                "typeString": "int_const -10"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 10,
+        "src": "67:132:0"
+      }
+    ],
+    "src": "33:168:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/FaucetContract.sol",
+      "exportedSymbols": {
+        "Faucet": [
+          9
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "33:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            9
+          ],
+          "name": "Faucet",
+          "scope": 10
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "funds",
+              "scope": 9,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "116:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1000",
+                  "value": "1000"
+                },
+                "id": 3,
+                "name": "Literal",
+                "src": "136:4:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "116:24:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "counter",
+              "scope": 9,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "int256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "int",
+                  "type": "int256"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "171:3:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "operator": "-",
+                  "prefix": true,
+                  "type": "int_const -10"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "3130",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 10",
+                      "value": "10"
+                    },
+                    "id": 6,
+                    "name": "Literal",
+                    "src": "193:2:0"
+                  }
+                ],
+                "id": 7,
+                "name": "UnaryOperation",
+                "src": "192:3:0"
+              }
+            ],
+            "id": 8,
+            "name": "VariableDeclaration",
+            "src": "171:24:0"
+          }
+        ],
+        "id": 9,
+        "name": "ContractDefinition",
+        "src": "67:132:0"
+      }
+    ],
+    "id": 10,
+    "name": "SourceUnit",
+    "src": "33:168:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xbAc496c1AAcAF0736dAe0874188BB5E542688Da9",
+      "transactionHash": "0x5667aeb4d5d5f84d5f2b2eb9e98626c8d47a42d8d7f3f749829ccc9484d93284"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-01-17T17:29:48.894Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
